@@ -11,7 +11,7 @@
     	$resume= file_get_contents($_FILES['resume']['tmp_name']);
     	$type = $_FILES['resume']['type'];
 	}
-	$conn=mysqli_connect('localhost', 'root');
+	//$conn=mysqli_connect('localhost', 'root');
 	mysqli_select_db($conn,'ojp');
 	ini_set('memory_limit', '-1');
 	$q="INSERT INTO user1 (username, email, password, mn, cl, resume,type, id) VALUES ('$username', '$email', '$password', '$mn', '$cl','$resume','$type' ,NULL)";
