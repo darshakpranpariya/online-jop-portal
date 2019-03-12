@@ -1,0 +1,72 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-image: url("11.jpg");
+	background-size: cover;
+	background-position: center;
+	font-family: sans-serif;
+}
+.login-box{
+	width: 350px;
+	height: 420px;
+	background: rgba(0,0,0,0.5); /*rgba background color
+	opacity:0.1; /*how transperent value from 0.0 to 1.0 */
+	color: #fff;	/*font color*/
+	top: 50%;
+	left: 50%;
+	position:absolute; /*absolute->not fixed we can resize it fixed->it would be fixed*/
+	transform: translate(-50%,-50%); /*set the position of the div from left and top*/
+	box-sizing: border-box;	/*box with border*/
+	padding: 70px 30px; /*top , right , bottom , left*/
+}
+.avtar{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%; /*Four values - border-radius: 15px 50px 30px 5px; (first value applies to top-left corner, second value applies to top-right corner, third value applies to bottom-right corner, and fourth value applies to bottom-left corner)*/
+	position: absolute;
+	top: -50px;
+	left: 35%;
+
+}
+h1{
+	margin: 0;
+	padding: 0 0 20px;
+	text-align: center;
+	font-size: 25px;
+}
+.login-box p{
+	margin: 0; /*space for outside of border*/
+	padding: 0; /*space for inside border and text*/
+	font-weight: bold;
+}
+.login-box input{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.login-box input[type="text"],input[type="password"]{
+	border:none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none; /*line outside of border*/
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+}
+.login-box input[type="submit"]{
+	border:none;
+	outline: none;
+	height: 40px;
+	background: #1c8adb;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 20px;
+}
+.login-box input[type="submit"]:hover{
+	cursor: pointer;
+	background: #39dc79;
+	color: red;
+}
+.login-box a{
+	text-decoration: none;
+	color: white;
+}
